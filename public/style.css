@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Oswald&family=Noto+Sans:wght@400;600&family=Merriweather&family=Roboto+Mono:wght@300;400&family=Ubuntu&display=swap');
 
-body {
+* { position:relative;
+z-index:1;
+	  color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+	}
+body, .body {
     height: 100%;
-    background-image: linear-gradient(to bottom right, #faf5ff, #4146ff);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(to bottom right, #3d3d3d, #2a2a2a);
 }
 
 .header {
@@ -37,11 +37,15 @@ body {
 .content .b {
     margin-bottom: 4%;
 }
-
+.btn-secondary {
+	background:#3d3d3d;
+	font-size:16x;
+	font-family: 'Barlow', sans-serif;
+	padding:5px;
+	}
+	
 .content a, a:link, a:active {
-    border-style: solid;
-    border-width: thin;
-    border-color: #fff;
+	background:#3d3d3d;
     border-radius: 0;
     box-shadow: 3px 4px black;
     padding: 11px;
@@ -50,10 +54,9 @@ body {
 
 a:hover, a:visited, a:focus {
     box-shadow: 1px 2px black;
-    border: thin solid #fff;
     text-decoration: none;
     transform: translate(2px, 2px);
-    background-color: rgba(255, 255, 255, 0.2);
+    background:#3d3d3d;
 }
 
 form {
@@ -84,20 +87,20 @@ form button {
 }
 
 input[type=url] {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #989898;
+    background: #3d3d3d;
+    color: #888;
+    outline:0;
     height: 100%;
     width: 100%;
     padding: 10px 10px;
-    border: thin #fff solid;
+    border: 0;
     border-radius: 0;
 }
 
+
 input[type=url]:focus {
-    background-color: rgba(243, 189, 255, 0.5);
-    border: thin #fff solid;
-    border-radius: 0;
-    color: #000;
+    background:#2d2d2d;
+    color: #fff;
     
 }
 
@@ -109,6 +112,10 @@ input[type=url]:focus {
     padding: 10px;
 }
 
+.fa-github {
+	font-size:20px;
+	}
+	
 .content2 .vid {
     border: medium #fff ridge;
     box-shadow: 2px 3px #000;
@@ -116,4 +123,12 @@ input[type=url]:focus {
 
 .content2 a {
     margin-top: 15px;
-}
+    }
+	
+.footer {
+	font-family: 'Barlow', sans-serif;
+	width:100%;
+	font-size:12px;
+	bottom:1em;
+	z-index:10;
+	}
